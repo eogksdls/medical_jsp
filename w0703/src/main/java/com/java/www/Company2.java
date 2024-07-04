@@ -48,6 +48,13 @@ public class Company2 extends HttpServlet {
 		writer.println("<body>");
 		writer.println("<h2>[ 성적정보 ]</h2>");
 		writer.println("<h3>학번 : "+stuNo+"</h3>");
+		writer.println("<h3>이름 : "+name+"</h3>");
+		writer.println("<h3>국어 : "+kor+"</h3>");
+		writer.println("<h3>영어 : "+eng+"</h3>");
+		writer.println("<h3>수학 : "+math+"</h3>");
+		writer.println("<h3>합계 : "+total+"</h3>");
+		writer.println("<h3>평균 : "+String.format("%.1f",avg)+"</h3>");
+		writer.println("<h3>등수 : "+rank+"</h3>");
 		
 		writer.println("</body>");
 		writer.println("</html>");
